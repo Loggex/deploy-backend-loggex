@@ -101,19 +101,19 @@ namespace LoggexWebAPI.Controllers
                     return BadRequest("Telefone inválido!");
                 }
 
-                var credentials = Credentials.FromApiKeyAndSecret(
-                    "085b22d5",
-                    "7ZmfbaVgw5SzArlP"
-                );
+                //var credentials = Credentials.FromApiKeyAndSecret(
+                //    "085b22d5",
+                //    "7ZmfbaVgw5SzArlP"
+                //);
 
-                var VonageClient = new VonageClient(credentials);
+                //var VonageClient = new VonageClient(credentials);
 
-                var response = VonageClient.SmsClient.SendAnSms(new Vonage.Messaging.SendSmsRequest()
-                {
-                    To = "55" + login.Telefone,
-                    From = "Vonage APIs",
-                    Text = "O código para acessar o Loggex é " + codigo
-                });
+                //var response = VonageClient.SmsClient.SendAnSms(new Vonage.Messaging.SendSmsRequest()
+                //{
+                //    To = "55" + login.Telefone,
+                //    From = "Vonage APIs",
+                //    Text = "O código para acessar o Loggex é " + codigo
+                //});
 
                 var minhasClaims = new[]    
                 {
