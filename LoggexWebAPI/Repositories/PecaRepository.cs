@@ -23,6 +23,7 @@ namespace LoggexWebAPI.Repositories
             //if(PecaU.IdVeiculoNavigation != null) { pecaBuscada.IdVeiculoNavigation = PecaU.IdVeiculoNavigation; }
             if(PecaU.ImgPeca != null) { pecaBuscada.ImgPeca = PecaU.ImgPeca; }
             //if(PecaU.LogAlteracaos != null) { pecaBuscada.LogAlteracaos = PecaU.LogAlteracaos; }
+            if(PecaU.Semelhanca != null) { pecaBuscada.Semelhanca = PecaU.Semelhanca; }
             pecaBuscada.EstadoPeca = PecaU.EstadoPeca; 
 
             ctx.Pecas.Update(pecaBuscada);
